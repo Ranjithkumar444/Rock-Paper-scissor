@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(27, 25, 25);
+    color: white;
+    font-family: Arial;
+}
+.rocki{
+    height: 150px;
+    width: 130px;
+}
+.paperi{
+    height : 120px;
+}
+.scissori{
+    height: 120px;
+}
+.js-result{
+    font-weight: bold;
+    font-size: large;
+}
+.movesicon{
+    height: 60px;
+}
+.js-moves{
+    font-weight: bold;
+    font-size: large;
+}
+.js-updatescore{
+    margin-top: 50px;
+}

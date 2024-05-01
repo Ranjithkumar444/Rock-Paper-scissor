@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaper</title>
+
+    <style>
+        body{
+            background-color: rgb(27, 25, 25);
+            color: white;
+            font-family: Arial;
+        }
+        .rocki{
+            height: 150px;
+            width: 130px;
+        }
+        .paperi{
+            height : 120px;
+        }
+        .scissori{
+            height: 120px;
+        }
+        .js-result{
+            font-weight: bold;
+            font-size: large;
+        }
+        .movesicon{
+            height: 60px;
+        }
+        .js-moves{
+            font-weight: bold;
+            font-size: large;
+        }
+        .js-updatescore{
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <p>Rock Paper Scissors</p>
+
+    <img class="rocki" src="images/rock-emoji.png" onclick="
+
+    playerchoice('rock');
+    
+    "></button>
+
+    <img class="paperi" src="images/paper-emoji.png" onclick="
+
+    playerchoice('paper');
+    
+    "></button>
+
+    
+    <img class="scissori"  src="images/scissor-emoji.png" onclick="
+  
+    playerchoice('scissor');
+       
+    "></button>
+
+    <p class="js-result"></p>
+    <p class="js-Moves"></p>
+    <p class="js-updatescore"></p>
+
+    <button onclick="
+    score.wins = 0;
+    score.lose = 0;
+    score.tie  = 0;
+    localStorage.removeItem('score');
+    updateScore();
+    ">Reset Score</button>
+    <button onclick="
+        autoplay()
+    ">AutoPlay</button>
+
+    <script src="rockpaper1.js"></script>
+</body>
+</html>
